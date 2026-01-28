@@ -8,8 +8,8 @@ export default function App() {
   return (
     <>
       <div className="flex justify-center">
-        {brands.map(({ alt, href, src }, index) => (
-          <a key={index} href={href} rel="nofollow noopener" target="_blank">
+        {brands.map(({ alt, href, src }) => (
+          <a key={href} href={href} rel="nofollow noopener" target="_blank">
             <img
               src={src}
               className="m-4 h-24 hover:drop-shadow-2xl"
