@@ -4,6 +4,8 @@ import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 import prettier from 'eslint-plugin-prettier';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import tsdoc from 'eslint-plugin-tsdoc';
 import globals from 'globals';
@@ -15,7 +17,7 @@ export default defineConfig([
   includeIgnoreFile(gitignorePath),
 
   {
-    files: ['**/*.{js,mjs,cjs,ts,tsx,mts,cts}'],
+    files: ['**/*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}'],
 
     plugins: {
       'simple-import-sort': simpleImportSort,
@@ -24,7 +26,12 @@ export default defineConfig([
       tsdoc,
     },
 
-    extends: ['eslint/recommended'],
+    extends: [
+      eslint.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+      tseslint.configs.recommended,
+    ],
 
     languageOptions: {
       globals: {
@@ -42,6 +49,4 @@ export default defineConfig([
       'tsdoc/syntax': 'error',
     },
   },
-
-  tseslint.configs.recommended,
 ]);

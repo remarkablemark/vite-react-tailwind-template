@@ -1,5 +1,6 @@
-import preact from '@preact/preset-vite';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
+
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 /**
@@ -12,5 +13,11 @@ export default defineConfig({
       src: resolve(__dirname, 'src'),
     },
   },
-  plugins: [preact()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [['babel-plugin-react-compiler']],
+      },
+    }),
+  ],
 });

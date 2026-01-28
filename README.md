@@ -1,16 +1,16 @@
-# vite-preact-tailwind-template
+# vite-react-tailwind-template
 
-[![build](https://github.com/remarkablemark/vite-preact-tailwind-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/vite-preact-tailwind-template/actions/workflows/build.yml)
+[![build](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml)
 
-Vite Preact Tailwind template.
+Vite React Tailwind Template
 
 ## Install
 
 Clone the repository:
 
 ```sh
-git clone https://github.com/remarkablemark/vite-preact-tailwind-template.git
-cd vite-preact-tailwind-template
+git clone https://github.com/remarkablemark/vite-react-tailwind-template.git
+cd vite-react-tailwind-template
 ```
 
 Install the dependencies:
