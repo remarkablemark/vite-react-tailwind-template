@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.mts"]
+  "include": ["eslint.config.mts", "postcss.config.mts", "vite.config.mts"]
 }
