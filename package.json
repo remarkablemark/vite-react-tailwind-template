@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "lint:tsc": "tsc --noEmit",
+    "lint:tsc": "tsc --project tsconfig.app.json",
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite --open"
