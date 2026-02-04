@@ -1,11 +1,11 @@
-name: lint
+name: test
 on: [push, pull_request]
 
 permissions:
   contents: read
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +21,5 @@ jobs:
       - name: Install dependencies
         run: npm ci --prefer-offline
 
-      - name: Run ESLint
-        run: npm run lint
-
-      - name: Type check
-        run: npm run lint:tsc
+      - name: Run Jest tests
+        run: npm run test:coverage

@@ -20,15 +20,16 @@ You're an expert engineer for this React app.
   - Jest 30 (testing framework)
   - Node.js 24
 - **File Structure:**
-  - `src/` – app code
   - `public/` – app assets
+  - `src/` – app code
+  - `test/` – test setup and mocks
 
 ## Tools you can use
 
 - **Build:** `npm run build` (builds web game with Vite, outputs to dist/)
 - **Lint:** `npm run lint:fix` (auto-fixes ESLint errors)
 - **Type check:** `npm run lint:tsc` (check TypeScript for errors)
-- **Test:** `npm test` (run Jest unit tests)
+- **Test:** `npm run test:coverage` (run Jest unit tests)
 - **Start:** `npm start` (starts the development web server at http://localhost:5173)
 
 ## Standards
