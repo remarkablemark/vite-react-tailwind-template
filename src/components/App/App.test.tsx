@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import App from './App';
+import App from '.';
 
 describe('App component', () => {
-  test('renders without crashing', () => {
+  it('renders without crashing', () => {
     render(<App />);
 
     const heading = screen.getByRole('heading', { level: 1 });
@@ -17,7 +17,7 @@ describe('App component', () => {
     expect(images).toHaveLength(3);
   });
 
-  test('button click increments count', async () => {
+  it('button click increments count', async () => {
     const user = userEvent.setup();
     render(<App />);
 
