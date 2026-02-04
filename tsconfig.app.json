@@ -26,8 +26,9 @@
 
     /* Path alias */
     "paths": {
-      "src/*": ["./src/*"]
+      "src/*": ["./src/*"],
+      "test/*": ["./test/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }
