@@ -17,15 +17,16 @@ You're an expert engineer for this React app.
   - React 19 (UI library)
   - TypeScript 5 (strict mode)
   - Vite 7 (build tool)
-  - Jest 30 (testing framework)
+  - Vitest 4 (testing framework)
   - Node.js 24
   - Tailwind CSS 4
   - ESLint 9 with TypeScript support
   - Prettier with Tailwind plugin
+  - React Compiler (babel-plugin-react-compiler)
 - **File Structure:**
   - `public/` – app assets
   - `src/` – app code
-  - `test/` – test setup and mocks
+  - `test/` – test setup
 
 ## Commands you can use
 
@@ -43,8 +44,7 @@ You're an expert engineer for this React app.
 
 ### Testing
 
-- **Run all tests:** `npm test` (run Jest tests)
-- **Watch mode:** `npm run test:watch` (run tests in watch mode with file watching)
+- **Watch mode:** `npm test` (run Vitest tests in watch mode with file watching)
 - **Coverage:** `npm run test:ci` (run tests with coverage report, requires 100% coverage)
 - **Single test file:** `npm test -- --run path/to/test.test.tsx` (run specific test file)
 - **Single test with coverage:** `npm run test:ci -- path/to/test.test.tsx`
@@ -56,7 +56,6 @@ You're an expert engineer for this React app.
 1. External libraries (react, react-dom, etc.)
 2. Internal modules (absolute imports starting with src/)
 3. Relative imports (./, ../)
-4. Type-only imports
 
 ```tsx
 // ✅ Correct order
@@ -73,6 +72,7 @@ import type { User } from './types';
 - **Prefer interfaces over types** for object shapes
 - **Use proper event types**: `React.MouseEvent`, `React.FormEvent`, etc.
 - **Component props**: Define interfaces with clear, descriptive property names
+- **Vitest globals** - include `vitest/globals` in tsconfig for global test functions
 
 ### Naming Conventions
 
@@ -114,6 +114,8 @@ import type { User } from './types';
 - **User interactions** - use @testing-library/user-event for simulating user actions
 - **Mock external dependencies** - mock API calls, browser APIs, etc.
 - **Descriptive test names** - should clearly state what is being tested
+- **Vitest globals** - use `vi.fn()`, `vi.mock()`, `vi.clearAllMocks()`
+- **Test setup** - global test environment configured in `vitest.config.mts` with `globals: true`
 
 ### Code Quality Rules
 
@@ -144,3 +146,11 @@ src/components/ComponentName/
 - ✅ **Always:** Write to `src/`; run lint, type check, and tests before commits; follow naming conventions
 - ⚠️ **Ask first:** Adding dependencies, modifying CI/CD config, changing build configuration
 - 🚫 **Never:** Commit secrets or API keys, edit `node_modules/`, disable ESLint rules, commit with failing tests
+
+## Development Notes
+
+- **Vite Integration:** This project uses Vite for dev server and build
+- **Modern React:** Uses React 19 with concurrent features and the new React Compiler
+- **ESM Only:** Project is configured as ES modules (`"type": "module"` in package.json)
+- **Git Hooks:** Husky + lint-staged enforce code quality on commits
+- **Commit Messages:** Conventional commits enforced by commitlint
