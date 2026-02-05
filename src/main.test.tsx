@@ -1,14 +1,15 @@
 import { createRoot } from 'react-dom/client';
+import { vi } from 'vitest';
 
-const mockRender = jest.fn();
+const mockRender = vi.fn();
 
-jest.mock('react-dom/client', () => ({
-  createRoot: jest.fn(() => ({
+vi.mock('react-dom/client', () => ({
+  createRoot: vi.fn(() => ({
     render: mockRender,
   })),
 }));
 
-const mockCreateRoot = jest.mocked(createRoot);
+const mockCreateRoot = vi.mocked(createRoot);
 
 beforeAll(() => {
   document.body.innerHTML = '<div id="root"></div>';
@@ -20,7 +21,7 @@ afterAll(() => {
 
 describe('main entry point', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it('creates root and renders App', () => {

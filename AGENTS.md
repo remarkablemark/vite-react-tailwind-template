@@ -45,9 +45,9 @@ You're an expert engineer for this React app.
 
 - **Run all tests:** `npm test` (run Jest tests)
 - **Watch mode:** `npm run test:watch` (run tests in watch mode with file watching)
-- **Coverage:** `npm run test:coverage` (run tests with coverage report, requires 100% coverage)
-- **Single test file:** `npm test -- path/to/test.test.tsx` (run specific test file)
-- **Single test with coverage:** `npm run test:coverage -- path/to/test.test.tsx`
+- **Coverage:** `npm run test:ci` (run tests with coverage report, requires 100% coverage)
+- **Single test file:** `npm test -- --run path/to/test.test.tsx` (run specific test file)
+- **Single test with coverage:** `npm run test:ci -- path/to/test.test.tsx`
 
 ## Code Style Guidelines
 

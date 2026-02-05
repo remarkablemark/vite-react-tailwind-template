@@ -48,15 +48,15 @@ Your app is ready to be deployed!
 
 ### `npm run lint`
 
-Runs ESLint.
+Checks code quality.
 
 ### `npm run lint:tsc`
 
-Checks for TypeScript errors.
+Checks for type errors.
 
 ### `npm test`
 
-Runs Jest unit tests.
+Runs tests.
 
 ## License
 
