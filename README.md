@@ -50,6 +50,14 @@ Your app is ready to be deployed!
 
 Runs ESLint.
 
+### `npm run lint:tsc`
+
+Checks for TypeScript errors.
+
+### `npm test`
+
+Runs Jest unit tests.
+
 ## License
 
 [MIT](LICENSE)
