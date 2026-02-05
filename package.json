@@ -11,8 +11,8 @@
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite --open",
-    "test": "vitest --coverage",
-    "test:ci": "CI=true npm test -- --run --color"
+    "test": "vitest",
+    "test:ci": "CI=true npm test -- --color --coverage --run"
   },
   "dependencies": {
     "react": "19.2.4",
@@ -42,7 +42,6 @@
     "eslint-plugin-react-x": "2.10.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-tsdoc": "0.5.0",
-    "globals": "17.3.0",
     "husky": "9.1.7",
     "identity-obj-proxy": "3.0.0",
     "jsdom": "28.0.0",
