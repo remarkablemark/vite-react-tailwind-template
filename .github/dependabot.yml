@@ -16,11 +16,8 @@ updates:
       eslint:
         patterns:
           - '@eslint/*'
-          - eslint
-      prettier:
-        patterns:
+          - 'eslint*'
           - prettier
-          - eslint-plugin-prettier
       react:
         patterns:
           - '@types/react'
