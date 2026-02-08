@@ -44,9 +44,8 @@ You're an expert engineer for this React app.
 
 ### Testing
 
-- **Watch mode:** `npm test` (run Vitest tests in watch mode with file watching)
 - **Coverage:** `npm run test:ci` (run tests with coverage report, requires 100% coverage)
-- **Single test file:** `npm test -- --run path/to/test.test.tsx` (run specific test file)
+- **Single test file:** `npm test -- path/to/test.test.tsx` (run specific test file)
 - **Single test with coverage:** `npm run test:ci -- path/to/test.test.tsx`
 
 ## Code Style Guidelines

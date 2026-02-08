@@ -8,20 +8,11 @@ export default defineConfig({
     setupFiles: ['./test/setupFiles.ts'],
     globals: true,
     coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html'],
       include: ['src/**/*.{ts,tsx}'],
       thresholds: {
-        global: {
-          branches: 100,
-          functions: 100,
-          lines: 100,
-          statements: 100,
-        },
+        100: true,
       },
     },
-    reporters:
-      process.env.CI === 'true' ? ['default', 'github-actions'] : ['default'],
   },
   resolve: {
     alias: {

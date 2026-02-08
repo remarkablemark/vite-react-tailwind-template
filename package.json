@@ -11,8 +11,9 @@
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite --open",
-    "test": "vitest",
-    "test:ci": "CI=true npm test -- --color --coverage --run"
+    "test": "vitest run",
+    "test:ci": "CI=true npm test -- --color --coverage",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "react": "19.2.4",
