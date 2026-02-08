@@ -114,7 +114,7 @@ import type { User } from './types';
 - **Mock external dependencies** - mock API calls, browser APIs, etc.
 - **Descriptive test names** - should clearly state what is being tested
 - **Vitest globals** - use `vi.fn()`, `vi.mock()`, `vi.clearAllMocks()`
-- **Test setup** - global test environment configured in `vitest.config.mts` with `globals: true`
+- **Test setup** - global test environment configured in `vite.config.mts` with `globals: true`
 
 ### Code Quality Rules
 
