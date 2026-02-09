@@ -91,6 +91,7 @@ import type { User } from './types';
 - **Destructure props** in function signature for clarity
 - **Semantic HTML** - use proper tags (header, nav, main, button, etc.)
 - **Accessibility first** - include proper ARIA labels, alt text, keyboard navigation
+- **No manual optimization** - React Compiler handles memoization automatically, avoid `useMemo` and `useCallback`
 
 ### CSS & Styling
 
