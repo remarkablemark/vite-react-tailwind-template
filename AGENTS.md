@@ -144,7 +144,7 @@ src/components/ComponentName/
 ## Boundaries
 
 - ✅ **Always:** Write to `src/`; run lint, type check, and tests before commits; follow naming conventions
-- ⚠️ **Ask first:** Adding dependencies, modifying CI/CD config, changing build configuration
+- ⚠️ **Ask first:** Adding dependencies, modifying CI/CD config, changing build configuration, editing dot files
 - 🚫 **Never:** Commit secrets or API keys, edit `node_modules/`, disable ESLint rules, commit with failing tests
 
 ## Development Notes
