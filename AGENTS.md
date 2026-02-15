@@ -44,7 +44,7 @@ You're an expert engineer for this React app.
 
 ### Testing
 
-- **Coverage:** `npm run test:ci` (run tests with coverage report, requires 100% coverage)
+- **Coverage:** `npm run test:ci` (run tests with coverage report)
 - **Single test file:** `npm test -- path/to/test.test.tsx` (run specific test file)
 - **Single test with coverage:** `npm run test:ci -- path/to/test.test.tsx`
 
@@ -109,7 +109,7 @@ import type { User } from './types';
 
 ### Testing Standards
 
-- **100% coverage required** - all statements, branches, functions, and lines
+- **100% coverage required** - all statements, branches, functions, and lines (except for barrel exports)
 - **Testing Library** - use @testing-library/react for component testing
 - **User interactions** - use @testing-library/user-event for simulating user actions
 - **Mock external dependencies** - mock API calls, browser APIs, etc.
