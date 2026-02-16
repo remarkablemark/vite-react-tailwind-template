@@ -110,12 +110,14 @@ import type { User } from './types';
 ### Testing Standards
 
 - **100% coverage required** - all statements, branches, functions, and lines (except for barrel exports)
+- **Do not test barrel exports** - index.ts files are barrel exports and should not have dedicated tests
 - **Testing Library** - use @testing-library/react for component testing
 - **User interactions** - use @testing-library/user-event for simulating user actions
 - **Mock external dependencies** - mock API calls, browser APIs, etc.
 - **Descriptive test names** - should clearly state what is being tested
 - **Vitest globals** - use `vi.fn()`, `vi.mock()`, `vi.clearAllMocks()`
 - **Test setup** - global test environment configured in `vite.config.mts` with `globals: true`
+- **Coverage exclusions** - Use `/* v8 ignore next -- @preserve */` for lines that are not testable
 
 ### Code Quality Rules
 
