@@ -31,6 +31,12 @@ export default defineConfig({
     globals: true,
     coverage: {
       include: ['src/**/*.{ts,tsx}'],
+      exclude: [
+        'src/**/*.d.ts',
+        'src/**/*.types.ts',
+        'src/**/index.ts',
+        'src/types/',
+      ],
       thresholds: {
         100: true,
       },
