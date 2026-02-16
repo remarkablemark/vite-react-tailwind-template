@@ -139,7 +139,7 @@ src/components/ComponentName/
 
 ### Import Aliases
 
-- `src/` maps to absolute imports (`src/components/App` → `src/components/App`)
+- `src/` maps to absolute imports
 
 ## Boundaries
 
