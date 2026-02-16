@@ -11,7 +11,6 @@ export default defineConfig({
   resolve: {
     alias: {
       src: resolve(__dirname, './src'),
-      test: resolve(__dirname, './test'),
     },
   },
 
@@ -28,7 +27,7 @@ export default defineConfig({
 
   test: {
     environment: 'jsdom',
-    setupFiles: ['./test/setupFiles.ts'],
+    setupFiles: ['./src/setupTests.ts'],
     globals: true,
     coverage: {
       include: ['src/**/*.{ts,tsx}'],
