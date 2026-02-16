@@ -108,7 +108,7 @@ import type { User } from './types';
 
 ### Testing Standards
 
-- **TDD ENFORCED** - tests MUST be written FIRST and verified to FAIL before implementation for all behavior changes (red, green, refactor)
+- **TDD** - tests MUST be written first and validated before implementation (red, green, refactor)
 - **100% coverage required** - all statements, branches, functions, and lines (except for barrel exports)
 - **Do not test barrel exports** - index.ts files are barrel exports and should not have dedicated tests
 - **Testing Library** - use @testing-library/react for component testing
