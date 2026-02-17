@@ -117,7 +117,7 @@ import type { User } from './types';
 - **Descriptive test names** - should clearly state what is being tested
 - **Vitest globals** - use `vi.fn()`, `vi.mock()`, `vi.clearAllMocks()`
 - **Test setup** - global test environment configured in `vite.config.mts` with `globals: true`
-- **Coverage exclusions** - Use `/* v8 ignore next -- @preserve */` for lines that are not testable
+- **Coverage exclusions** - Use `/* v8 ignore next -- @preserve */` for a single line that is not testable or `/* v8 ignore start */` and `/* v8 ignore end */` for multiple lines that are not testable
 
 ### Code Quality Rules
 
