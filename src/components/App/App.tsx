@@ -6,7 +6,7 @@ export default function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main>
+    <main className="max-w-(--breakpoint-xl) p-8 text-center">
       <div className="flex justify-center">
         {brands.map(({ alt, href, src }) => (
           <a key={href} href={href} rel="nofollow noopener" target="_blank">
