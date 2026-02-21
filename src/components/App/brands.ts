@@ -1,3 +1,4 @@
+/* v8 ignore file -- @preserve */
 import react from '/react.svg';
 import tailwind from '/tailwind.svg';
 import vite from '/vite.svg';
