@@ -6,7 +6,7 @@ export default function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <main>
       <div className="flex justify-center">
         {brands.map(({ alt, href, src }) => (
           <a key={href} href={href} rel="nofollow noopener" target="_blank">
@@ -42,6 +42,6 @@ export default function App() {
       <p className="text-slate-400">
         Click on the Vite, React, and Tailwind logos to learn more
       </p>
-    </>
+    </main>
   );
 }
