@@ -58,8 +58,8 @@ You're an expert engineer for this React app.
 // ✅ Correct order
 import { useState } from 'react';
 import userEvent from '@testing-library/user-event';
-import App from 'src/components/App';
-import brands from './brands';
+import { App } from 'src/components/App';
+import { brands } from './brands';
 import type { User } from './types';
 ```
 

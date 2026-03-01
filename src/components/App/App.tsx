@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import brands from './brands';
+import { brands } from './brands';
 
-export default function App() {
+export function App() {
   const [count, setCount] = useState(0);
 
   return (
