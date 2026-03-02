@@ -56,10 +56,11 @@ You're an expert engineer for this React app.
 
 ```tsx
 // ✅ Correct order
-import { useState } from 'react';
 import userEvent from '@testing-library/user-event';
+import { useState } from 'react';
 import { App } from 'src/components/App';
-import { brands } from './brands';
+
+import brands from './brands';
 import type { User } from './types';
 ```
 
