@@ -1,0 +1,19 @@
+{
+  "name": "Vite React Tailwind Template",
+  "short_name": "Vite React Tailwind Template",
+  "description": "Vite React Tailwind Template",
+  "start_url": "/vite-react-tailwind-template/",
+  "scope": "/vite-react-tailwind-template/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
