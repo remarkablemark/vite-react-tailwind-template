@@ -16,6 +16,13 @@
           (!('theme' in localStorage) &&
             window.matchMedia('(prefers-color-scheme: dark)').matches),
       );
+      window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', function (event) {
+          if (!('theme' in localStorage)) {
+            document.documentElement.classList.toggle('dark', event.matches);
+          }
+        });
     </script>
     <script
       src="https://unpkg.com/github-corners/dist/embed.min.js"
