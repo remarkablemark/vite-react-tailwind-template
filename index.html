@@ -9,21 +9,6 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="apple-touch-icon" href="/logo.svg" />
     <title>Vite React Tailwind Template</title>
-    <script>
-      document.documentElement.classList.toggle(
-        'dark',
-        localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches),
-      );
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener('change', function (event) {
-          if (!('theme' in localStorage)) {
-            document.documentElement.classList.toggle('dark', event.matches);
-          }
-        });
-    </script>
     <script
       src="https://unpkg.com/github-corners/dist/embed.min.js"
       data-href="https://github.com/remarkablemark/vite-react-tailwind-template"
