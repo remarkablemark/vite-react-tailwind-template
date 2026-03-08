@@ -80,7 +80,7 @@ You're an expert engineer for this React app.
 - **Tailwind CSS only** - no custom CSS files unless absolutely necessary
 - **Responsive design** - use Tailwind responsive prefixes (sm:, md:, lg:)
 - **Component variants** - use Tailwind's utility classes with consistent patterns
-- **Dark mode support** - use `dark:` prefix when needed
+- **Dark mode support** - use dark: prefix when needed
 
 ### Error Handling
 
