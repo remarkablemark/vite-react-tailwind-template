@@ -48,22 +48,6 @@ You're an expert engineer for this React app.
 
 ## Code Style
 
-### Import Order (Enforced by eslint-plugin-simple-import-sort)
-
-1. External libraries (react, react-dom, etc.)
-2. Internal modules (absolute imports starting with src/)
-3. Relative imports (./, ../)
-
-```tsx
-// ✅ Correct order
-import userEvent from '@testing-library/user-event';
-import { useState } from 'react';
-import { App } from 'src/components/App';
-
-import brands from './brands';
-import type { User } from './types';
-```
-
 ### TypeScript Rules
 
 - **Strict mode enabled** - no implicit any, all types must be explicit
