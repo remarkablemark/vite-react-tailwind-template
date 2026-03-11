@@ -4,7 +4,7 @@
 [![test](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/remarkablemark/vite-react-tailwind-template/graph/badge.svg?token=DEr2eVeqdz)](https://codecov.io/gh/remarkablemark/vite-react-tailwind-template)
 
-Vite React Tailwind Template
+⚡ Vite React Tailwind Template
 
 ## Install
 
