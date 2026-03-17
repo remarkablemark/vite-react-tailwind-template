@@ -15,14 +15,14 @@ You're an expert engineer for this React app.
 
 - **Tech Stack:**
   - React 19 (UI library)
+  - Tailwind CSS 4
   - TypeScript 5 (strict mode)
   - Vite 7 (build tool)
   - Vitest 4 (testing framework)
-  - Node.js 24
-  - Tailwind CSS 4
+  - React Compiler (babel-plugin-react-compiler)
   - ESLint 9 with TypeScript support
   - Prettier with Tailwind plugin
-  - React Compiler (babel-plugin-react-compiler)
+  - Node.js 24
 - **File Structure:**
   - `public/` – assets
   - `src/` – features, types, tests
