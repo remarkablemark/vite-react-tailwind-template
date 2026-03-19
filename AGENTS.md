@@ -5,7 +5,7 @@ description: Expert web developer for this React app
 
 ## Tech Stack
 
-React 19, Tailwind CSS 4, TypeScript 5 (strict), Vite 7, Vitest 4, React Compiler, Node.js 24
+React 19, Tailwind CSS 4, TypeScript 5 (strict), Vite 8, Vitest 4, React Compiler, Node.js 24
 
 ## Commands
 
