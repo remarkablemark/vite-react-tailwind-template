@@ -31,6 +31,9 @@ React 19, Tailwind CSS 4, TypeScript 5 (strict), Vite 7, Vitest 4, React Compile
 
 ## File Structure
 
+- `src` (alias for absolute imports) – features, types, tests
+- `public` – assets
+
 ```
 src/components/ComponentName/
 ├── ComponentName.tsx
@@ -38,16 +41,3 @@ src/components/ComponentName/
 ├── ComponentName.test.tsx
 └── index.ts
 ```
-
-- `src` (alias for absolute imports) – features, types, tests
-- `public` – assets
-
-## Boundaries
-
-- ✅ **Always:** Write to `src`; lint, type check, test before commit
-- ⚠️ **Ask first:** New dependencies, CI/CD, build config, dot files
-- 🚫 **Never:** Secrets, edit `node_modules`, disable ESLint, commit with failing tests
-
-## Notes
-
-ESM only (`"type": "module"`), Conventional Commits
