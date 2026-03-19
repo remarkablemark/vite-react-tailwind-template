@@ -5,7 +5,13 @@ description: Expert web developer for this React app
 
 ## Tech Stack
 
-React 19, Tailwind CSS 4, TypeScript 5 (strict), Vite 8, Vitest 4, React Compiler, Node.js 24
+- React 19
+- Tailwind CSS 4
+- TypeScript 5 (strict mode)
+- Vite 8
+- Vitest 4
+- React Compiler
+- Node.js 24
 
 ## Commands
 
@@ -22,22 +28,23 @@ React 19, Tailwind CSS 4, TypeScript 5 (strict), Vite 8, Vitest 4, React Compile
 
 - **TypeScript:** Strict mode, interfaces over types, explicit event types
 - **Naming:** Components (PascalCase), functions (camelCase), constants (UPPER_SNAKE_CASE)
-- **Files:** `ComponentName.tsx`, `ComponentName.types.ts`, `ComponentName.test.tsx`
+- **Files:** Common component layout includes `ComponentName.tsx`, `ComponentName.test.tsx`, `index.ts`, and optional sibling files such as `ComponentName.types.ts` or helper modules
 - **React:** Functional components only, hooks at top level, destructure props, semantic HTML, accessibility first, no `useMemo`/`useCallback` (React Compiler handles it)
 - **CSS:** Tailwind only, responsive (`sm:`/`md:`/`lg:`), dark mode with `dark:`
 - **Error handling:** No console.log, try-catch async, error boundaries, type guards
-- **Testing:** TDD, 100% coverage (except barrel exports), @testing-library/react + user-event, Vitest globals (no need to import from `vitest`)
+- **Testing:** TDD, 100% coverage thresholds, `@testing-library/react` + user-event, Vitest globals (no need to import from `vitest`)
 - **Quality:** No debugger, Prettier auto-format, TSDoc for public APIs
 
 ## File Structure
 
-- `src` (alias for absolute imports) – features, types, tests
+- `src` (optional alias for absolute imports) – features, types, tests
 - `public` – assets
 
 ```
 src/components/ComponentName/
 ├── ComponentName.tsx
-├── ComponentName.types.ts
 ├── ComponentName.test.tsx
+├── ComponentName.types.ts (optional)
+├── helpers.ts (optional)
 └── index.ts
 ```
