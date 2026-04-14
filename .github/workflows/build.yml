@@ -22,9 +22,7 @@ jobs:
         run: npm ci --prefer-offline
 
       - name: Build app
-        run: npm run build
-        env:
-          BASE: /${{ github.event.repository.name }}/
+        run: npm run build -- --base /${{ github.event.repository.name }}/
 
       - name: Deploy
         if: github.ref_name == 'master'
