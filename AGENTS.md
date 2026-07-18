@@ -7,7 +7,7 @@ description: Expert web developer for this React app
 
 - React 19
 - Tailwind CSS 4
-- TypeScript 5 (strict mode)
+- TypeScript 6 (strict mode)
 - Vite 8
 - Vitest 4
 - React Compiler
