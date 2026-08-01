@@ -10,7 +10,6 @@ description: Expert web developer for this React app
 - TypeScript 6 (strict mode)
 - Vite 8
 - Vitest 4
-- React Compiler
 - Node.js 24
 
 ## Commands
