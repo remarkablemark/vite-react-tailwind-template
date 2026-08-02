@@ -12,7 +12,7 @@ export default defineConfig({
           groups: [
             {
               name: 'react',
-              test: /node_modules\/(react|react-dom)/,
+              test: /node_modules\/(react|react-dom)\//,
             },
           ],
         },
