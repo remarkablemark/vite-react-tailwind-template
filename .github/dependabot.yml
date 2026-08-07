@@ -17,7 +17,7 @@ updates:
         patterns:
           - '@eslint/*'
           - 'eslint*'
-          - prettier
+          - 'prettier*'
       react:
         patterns:
           - '@types/react'
