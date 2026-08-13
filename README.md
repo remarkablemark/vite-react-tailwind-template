@@ -21,6 +21,12 @@ Install the dependencies:
 npm install
 ```
 
+Copy the environment variables:
+
+```sh
+cp .env.example .env
+```
+
 ## Run
 
 ## Available Scripts
