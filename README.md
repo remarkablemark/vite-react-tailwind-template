@@ -23,13 +23,13 @@ npm install
 
 ## Environment Variables
 
-Update the environment variables:
+Copy the environment variables:
 
 ```sh
 cp .env.example .env
 ```
 
-Update the **Secrets** in the repository **Settings**.
+Add the **Secrets** in the repository **Settings**.
 
 ## Available Scripts
 
