@@ -21,13 +21,15 @@ Install the dependencies:
 npm install
 ```
 
-Copy the environment variables:
+## Environment Variables
+
+Update the environment variables:
 
 ```sh
 cp .env.example .env
 ```
 
-## Run
+Update the **Secrets** in the repository **Settings**.
 
 ## Available Scripts
 
@@ -55,7 +57,7 @@ Your app is ready to be deployed!
 
 ### `npm run lint`
 
-Checks code quality.
+Checks the code quality.
 
 ### `npm run lint:tsc`
 
@@ -63,11 +65,7 @@ Checks for type errors.
 
 ### `npm test`
 
-Runs tests.
-
-### `npm run test:ci`
-
-Runs tests with coverage.
+Runs the tests.
 
 ## License
 
