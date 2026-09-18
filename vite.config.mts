@@ -34,6 +34,12 @@ export default defineConfig({
     },
   },
 
+  server: {
+    watch: {
+      ignored: ['**/coverage/**'],
+    },
+  },
+
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts'],
