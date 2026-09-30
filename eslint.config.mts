@@ -21,7 +21,6 @@ export default defineConfig([
 
     plugins: {
       'simple-import-sort': simpleImportSort,
-      js,
       prettier,
       tsdoc,
     },
@@ -32,8 +31,6 @@ export default defineConfig([
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
       reactX.configs['recommended-typescript'],
-      tseslint.configs.recommended,
-      tseslint.configs.recommendedTypeChecked,
       tseslint.configs.strictTypeChecked,
       tseslint.configs.stylisticTypeChecked,
     ],
@@ -47,7 +44,6 @@ export default defineConfig([
 
     rules: {
       'no-console': 'error',
-      'no-debugger': 'error',
       'prettier/prettier': 'error',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',
