@@ -21,16 +21,6 @@ Install the dependencies:
 npm install
 ```
 
-## Environment Variables
-
-Copy the environment variables:
-
-```sh
-cp .env.example .env
-```
-
-Add the **Secrets** in the repository **Settings**.
-
 ## Available Scripts
 
 In the project directory, you can run:
