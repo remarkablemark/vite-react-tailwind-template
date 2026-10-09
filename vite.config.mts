@@ -32,7 +32,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      src: resolve(import.meta.dirname, './src'),
+      src: resolve(import.meta.dirname, 'src'),
     },
   },
 
