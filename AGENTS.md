@@ -22,6 +22,7 @@ description: Expert TypeScript developer for this React site
 
 ## Standards
 
+- Assets: Paths must not start with a slash `/`
 - TypeScript: Strict mode, interfaces over types, avoid unnecessary type casting, only annotate or assert types when inference is genuinely impossible
 - Naming: Components (PascalCase), functions (camelCase), constants (UPPER_SNAKE_CASE)
 - Files: Common component layout includes `ComponentName.tsx`, `ComponentName.test.tsx`, `index.ts`, and optional sibling files such as `ComponentName.types.ts` or helper modules
@@ -34,8 +35,8 @@ description: Expert TypeScript developer for this React site
 
 ## File Structure
 
-- `src` (alias for absolute imports) – features, utils, types, tests
-- `public` – assets
+- `src` (alias for absolute imports): features, utils, types, tests
+- `public`: assets
 - Use a concern-based project structure, not feature folders; place code by technical responsibility (`components`, `hooks`, `services`, `utils`, `types`, etc.)
 
 ```
