@@ -28,7 +28,7 @@ description: Expert TypeScript developer for this React site
 - Files: Common component layout includes `ComponentName.tsx`, `ComponentName.test.tsx`, `index.ts`, and optional sibling files such as `ComponentName.types.ts` or helper modules
 - React: Functional components only, hooks at top level, destructure props, semantic HTML, accessibility first, no `useMemo`/`useCallback` (React Compiler handles it)
 - CSS: Tailwind only, responsive (`sm:`/`md:`/`lg:`), dark mode with `dark:`
-- Testing: 100% coverage, `@testing-library/react` + user-event, Vitest globals (no need to import from `vitest`), `/* v8 ignore start */` and `/* v8 ignore stop */` for lines that are untestable
+- Testing: 100% coverage, `@testing-library/react` + user-event, Vitest globals (do not import `vitest`), `/* v8 ignore start */` and `/* v8 ignore stop */` for lines that are untestable
 - [Prettier](./.prettierrc.json) for formatting
 - [ESLint](./eslint.config.mts) with `typescript-eslint` strict and stylistic type-checked configs
   - Sort imports and exports with `simple-import-sort`
