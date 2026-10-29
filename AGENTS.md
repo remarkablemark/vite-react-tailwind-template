@@ -18,7 +18,7 @@ description: Expert TypeScript developer for this React site
 - `npm run lint`: runs ESLint; `npm run lint:fix` auto-fixes errors
 - `npm run lint:tsc`: checks TypeScript for errors
 - `npm run test:ci`: runs tests with coverage
-- `npm start`: starts and opens the development web server at http://localhost:5173 (run manually by the user; don't execute automatically)
+- `npm start`: starts and opens development web server at http://localhost:5173 (run manually by user; don't execute automatically)
 
 ## Standards
 
